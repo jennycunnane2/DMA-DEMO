@@ -5634,7 +5634,6 @@ a.badge:focus {
 .dash-links li{
   display: inline;
   padding: 6px 8px ;
-  background-color: #ccc;
   border-radius: .5%;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
@@ -5652,20 +5651,23 @@ i {
 .profile-pic{
   width: 100px;
   height: 100px;
-  background: #DDD;
   padding: 3px;
   -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
   border-radius: 50em;
   position: relative;  
+
  
 }
 
 .top-dash{
-  background-color: #ededed;
-  -webkit-border-radius: 25px;
--moz-border-radius: 25px;
-border-radius: 25px;
+  padding-top: 2%;
+  border-top: 1px solid #ededed;
+   border-bottom: 1px solid #ededed;
+
+
+
+
 }
 
 .welcome{
@@ -5673,7 +5675,7 @@ border-radius: 25px;
 }
 
 
-.profile-name{
+.profile-sm-text{
   font-size: 12px;
 
 
@@ -5722,6 +5724,9 @@ border-radius: 25px;
 
   }
 
+.panels{
+  padding-top: 2%;
+}
 
 
 .panel-header{
@@ -5735,4 +5740,32 @@ border-radius: 25px;
 
 .dashboard-nav {
   float: right;
+  margin-right: 5%;
 }
+
+.bio{
+
+ 
+}
+
+.bio p{
+
+   padding: 5% 10% 0% 10%;
+   float: right;
+   text-align: left;
+  
+
+}
+
+
+
+.dashboard-header{
+  font-size: 18px;
+  display: inline;
+}
+
+.center{
+  margin: 0 auto;
+  text-align: center;
+}
+
