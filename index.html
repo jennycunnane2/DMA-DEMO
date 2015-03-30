@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
-<html lang="en" hola_ext_inject="ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" hola_ext_inject="ready">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +11,14 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,41 +26,110 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+                            
+
   </head>
 
   <body data-pinterest-extension-installed="cr1.35" data-feedly-mini="yes" cz-shortcut-listen="true" hola-ext-player="1">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://getbootstrap.com/2.3.2/examples/starter-template.html#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="http://getbootstrap.com/2.3.2/examples/starter-template.html#">Home</a></li>
-              <li><a href="http://getbootstrap.com/2.3.2/examples/starter-template.html#about">About</a></li>
-              <li><a href="http://getbootstrap.com/2.3.2/examples/starter-template.html#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+           <!-- Nav Bar-->
+                        <div class="navbar navbar-inverse navbar-fixed-top">
+                          <div class="navbar-inner">
+                            <div class="container">
+
+                                      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                          <a class="brand" href="http://getbootstrap.com/2.3.2/examples/starter-template.html#">Direct Match</a>
+                              <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                   <li class="active"><a href="#">Home</a></li>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Careers</a></li>
+                                  <li><a href="#">Internships</a></li>
+                                   <li><a href="#">Contact</a></li>
+                             
+                                </ul>
+
+
+                              </div><!--/.nav-collapse -->
+                            </div><!--/.container -->
+                          </div><!--/.navbarinner -->
+                        </div><!--/.navbarinner fixedr -->
+          <!-- End Nav Bar-->
+
+
+
+ <!-- Open body content-->
+  <main class="container "> 
+               <div class="span12 clearfix">
+                        <nav class="dashboard-nav cf">
+                          <ul class="dash-links">
+                           <li><a href="#"><i class="fa fa-bell"></i> Matches (4)</a></li>
+                            <li><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
+                              <li><a href="#">Sign Out<i class="fa fa-sign-out"></i> </a></li>
+                         </ul>
+                        </nav>
+                     </div>   
+
+
+          <div class="row top-dash">
+
+                     <div class="span 6 welcome">
+                       <h1>Welcome back Joanne!</h1>
+                     <img src="img/img-profile.jpg" class="profile-pic" alt="" />
+                     <p class="profile-name">Joanne Avery </p>
+                    </div>  <!-- sppan4-->
+
+        </div><!-- top dash-->
+
+          <div class="row main-content">
+                   <div class="span3 panel first">
+                    
+                       <i class="fa fa-5x fa-user "></i>
+                          <h2 class="panel-header"> Edit Pic/Bio</h2>
+                   </div> 
+             
+               
+                   <div class="span3 panel keywords">
+                     <i class="fa fa-5x fa-tag "></i>
+                          <h2 class="panel-header"> Update Keywords</h2>
+                   </div> 
+             
+
+         
+                    <div class="span3 panel cv">
+                     <i class="fa fa-5x fa-file-text "></i>
+                          <h2 class="panel-header"> Manage CV's </h2>
+                   </div> 
+           
+                    <div class="span3 panel netorks">
+                     <i class="fa fa-5x  fa-users "></i>
+                          <h2 class="panel-header">Your Networks </h2>
+                   </div> 
+          </div>  
+
+
+
+
+       </main><!--main  container-->
+
+
+   
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
       </div>
-    </div>
-
-    <div class="container">
-
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-
-    </div> <!-- /container -->
+</footer>
 
     <!-- Le javascript
     ================================================== -->
@@ -77,4 +150,7 @@
 
   
 
-<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
+<div id="feedly-mini" title="feedly Mini tookit"></div>
+</body>
+</html>
+
