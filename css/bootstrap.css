@@ -4416,16 +4416,18 @@ input[type="submit"].btn.btn-mini {
   padding: 8px 15px;
   margin: 0 0 20px;
   list-style: none;
-  border-bottom: 1px solid #ccc;
+ 
 }
 
 .breadcrumb > li {
   display: inline-block;
+
   *display: inline;
 
   *zoom: 1;
-  padding: 0 2%;
+
 }
+
 
 .breadcrumb > li > .divider {
   padding: 0 5px;
@@ -5637,6 +5639,10 @@ a.badge:focus {
   list-style: none;
 }
 
+.dashlinks{
+    border-bottom: 1px solid #ededed;
+}
+
 .dash-links li{
   display: inline;
   padding: 6px 8px ;
@@ -5679,7 +5685,7 @@ i {
 }
 .top-dash{
   padding-top: 2%;
-  border-top: 1px solid #ededed;
+
    border-bottom: 1px solid #ededed;
 
 
@@ -6004,4 +6010,8 @@ font-size: 32px
 
 .related-role-table li{
   border-bottom: 1px solid #ccc;
+}
+
+.right{
+  float: right;
 }
