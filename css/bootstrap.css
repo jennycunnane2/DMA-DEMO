@@ -5985,4 +5985,23 @@ font-size: 32px
 
 
 }
+.related-roles{
+  margin-top: 5%;
+}
 
+.related-roles h1{
+  font-size: 16px;
+}
+.related-role-entry{
+  list-style: none;
+
+}
+
+.related-role-table{
+    list-style: none;
+
+}
+
+.related-role-table li{
+  border-bottom: 1px solid #ccc;
+}
