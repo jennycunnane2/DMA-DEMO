@@ -72,9 +72,10 @@
  <!-- Open body content-->
   <main class="container "> 
                <div class="row">
-                        <nav class="dashboard-nav clearfix">
+                         <nav class="dashboard-nav">
                           <ul class="dash-links">
-                           <li><a href="#"><i class="fa fa-bell"></i> Matches (4)</a></li>
+                              <li class="active"><a href="#"><i class="fa fa-cog"></i> Profile settings</a></li>
+                           <li ><a href="#"><i class="fa fa-bell"></i> Matches (4)</a></li>
                             <li><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
                               <li><a href="#">Sign Out<i class="fa fa-sign-out"></i> </a></li>
                          </ul>
@@ -142,7 +143,11 @@
    
 <footer class="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+          <div class="row">
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 1</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 2</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 3</div>
+          </div>
       </div>
 </footer>
 
@@ -166,6 +171,8 @@
   
 
 <div id="feedly-mini" title="feedly Mini tookit"></div>
+ 
+    <script src='masonry.pkgd.min.js'></script>
 </body>
 </html>
 

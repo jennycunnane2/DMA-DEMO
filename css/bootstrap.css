@@ -8,6 +8,12 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+ * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+ 
 .clearfix {
   *zoom: 1;
 }
@@ -39,6 +45,8 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+
 
 article,
 aside,
@@ -241,7 +249,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -334,7 +342,7 @@ a:focus {
   width: 540px;
 }
 
-.span6 {
+.span6 { 
   width: 460px;
 }
 
@@ -4408,17 +4416,15 @@ input[type="submit"].btn.btn-mini {
   padding: 8px 15px;
   margin: 0 0 20px;
   list-style: none;
-  background-color: #f5f5f5;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-bottom: 1px solid #ccc;
 }
 
 .breadcrumb > li {
   display: inline-block;
   *display: inline;
-  text-shadow: 0 1px 0 #ffffff;
+
   *zoom: 1;
+  padding: 0 2%;
 }
 
 .breadcrumb > li > .divider {
@@ -5660,6 +5666,17 @@ i {
  
 }
 
+.profile-pic-sm{
+  width: 30px;
+  height:30px;
+  padding: 1px;
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  border-radius:50em;
+  position: relative;  
+
+ 
+}
 .top-dash{
   padding-top: 2%;
   border-top: 1px solid #ededed;
@@ -5675,8 +5692,9 @@ i {
 }
 
 
-.profile-sm-text{
-  font-size: 12px;
+
+.profile-tiny-text{
+  font-size: 9px;
 
 
 }
@@ -5767,5 +5785,204 @@ i {
 .center{
   margin: 0 auto;
   text-align: center;
+}
+
+
+.footer-logos{
+padding: 1% 0% 0% 0%;
+text-align: center;
+margin: 0 auto;
+
+}
+
+.partner-logo{
+  max-width:60px;
+}
+
+
+      .item {
+      
+        float: left;
+        background: #ededed;
+        box-shadow: 2px 2px 4px #dbdbdb;
+
+    background-color: #ededed;
+ -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+max-width: 300px;
+margin-top: 2%;
+     
+      }
+ 
+      
+      .container-full {
+  margin: 0 auto;
+  padding: 0% 5% 0% 5%;
+  width: 100%;
+
+}
+
+
+
+.match{
+  padding:5% 0% 0% 0%;
+
+}
+
+
+.job-header {
+  text-align: center;
+  margin: 0 auto
+ 
+
+}
+
+.job-header img{
+  height: 120px;
+}
+
+.match-highlight{
+
+  height: 20px;
+  color: #fff;
+
+}
+ .new{
+    background-color: #515151;
+}
+
+.old{
+   background-color: #adb7c1;
+
+}
+
+
+.joblisting{
+  list-style: none;
+  margin: 5% 2% 5% 2%;
+}
+
+.joblisting li{
+ border-style: solid 1 px;
+    border-bottom: thin solid #fff;
+}
+
+.author-details{
+
+  margin: 2%;
+}
+
+.send-message{
+  float: right;
+  padding: 2% 2% 0% 0%;
+}
+
+.dashboard-wrap{
+  margin-top: 2%;
+  text-align: center;s
+}
+
+.dashboard-nav .active{
+  background-color: #0088cc;
+  color: #fff;
+
+}
+
+.dashboard-nav .active a{
+color: #fff;
+ -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 20px;
+max-width: 300px;
+margin-top: 1%;
+}
+
+.matches-grid{
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 9%;
+
+}
+
+
+
+.job-wrap{
+padding: 2%;
+  background-color: #ededed;
+   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+}
+
+.title-large{
+font-size: 32px
+
+
+}
+
+.divider-right{
+  border-right: 1px solid #ccc;
+}
+
+.statement{
+    border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 2% 0%;
+  
+
+}
+
+.keywords-list{
+  list-style: none;
+  margin:0px;
+  padding-bottom: 5%;
+
+}
+
+.keywords-list li{
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  background-color: #ededed;
+     -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color:#dbdbdb;
+  margin-top:1%;
+
+}
+.apply-header{
+  border-bottom: 1px solid #ccc;
+}
+.apply-now{
+    background-color:  #ededed;
+    padding: 5%;
+       -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin:0 auto;
+}
+
+
+.apply-body{
+  padding: 5%;
+}
+.apply-form input{
+  height: 150px;
+  width: 300px;
+   padding-bottom: 120px;
+}
+
+.primary-cta{
+  background-color: #4ccd46;
+  padding: 10px 35px 10px 35px;
+       -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 300px;
+
+
 }
 
