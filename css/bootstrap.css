@@ -40,11 +40,12 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 30px;
+  min-height: 40px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 
 
 
@@ -1322,6 +1323,7 @@ textarea::-webkit-input-placeholder {
 
 .input-large {
   width: 210px;
+height:40px;
 }
 
 .input-xlarge {
@@ -1383,6 +1385,7 @@ input.span10,
 textarea.span10,
 .uneditable-input.span10 {
   width: 766px;
+    height: 100px; 
 }
 
 input.span9,
@@ -1395,6 +1398,7 @@ input.span8,
 textarea.span8,
 .uneditable-input.span8 {
   width: 606px;
+
 }
 
 input.span7,
@@ -5913,8 +5917,9 @@ margin-top: 1%;
 
 
 
-.job-wrap{
+.panel-wrap{
 padding: 2%;
+margin-top:2%;
   background-color: #ededed;
    -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -5998,6 +6003,10 @@ font-size: 32px
 .related-roles h1{
   font-size: 16px;
 }
+
+h2{
+  font-size: 16px;
+}
 .related-role-entry{
   list-style: none;
 
@@ -6012,6 +6021,29 @@ font-size: 32px
   border-bottom: 1px solid #ccc;
 }
 
-.right{
-  float: right;
+
+.message-box-wrap{
+padding: 5% 8% 5% 8%;
+  border-bottom: 1px solid #ccc;
+
+}
+
+
+.message-entry-wrap{
+      border-bottom: 1px solid #ccc;
+      padding: 2%;
+
+}
+
+
+.recieved{
+  background-color: #fff;
+}
+
+
+#messaged{
+  background-color: #57ea50;
+  
+
+
 }

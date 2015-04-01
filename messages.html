@@ -12,6 +12,8 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <style>
       body {
@@ -49,10 +51,10 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                       </button>
-                                          <a class="brand" href="http://getbootstrap.com/2.3.2/examples/starter-template.html#">Direct Match</a>
+                                             <a class="brand" href="#">Direct Match</a>
                               <div class="nav-collapse collapse">
                                 <ul class="nav">
-                                   <li class="active"><a href="#">Home</a></li>
+                                  <li class="active"><a href="#">Home</a></li>
                                   <li><a href="#">About us</a></li>
                                   <li><a href="#">Careers</a></li>
                                   <li><a href="#">Internships</a></li>
@@ -71,73 +73,137 @@
 
  <!-- Open body content-->
   <main class="container "> 
-               <div class="row">
-                         <nav class="dashboard-nav">
+
+
+  <div class="row dashlinks">
+                        <nav class="dashboard-nav">
                           <ul class="dash-links">
-                              <li class="active"><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
-                           <li ><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
-                            <li><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
+                              <li><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
+                           <li><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
+                            <li class="active"><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
                               <li><a href="#">Sign Out<i class="fa fa-sign-out"></i> </a></li>
                          </ul>
                         </nav>
                 </div>   
-
-
-          <div class="row top-dash">
-
-                     <div class="span6 welcome">
-                      <ul class="dash-links">
-                          <li class="profile-pic"> <img src="img/img-profile.jpg" class="profile-pic" alt="" /></li>
-                        <li> <h1 class="dashboard-header"> Welcome back Joanne! </h1></li>
-                       
-                       
-                      </ul>
-                      
-                    
-                   
-                      </div>  
-                      <div class="span6 bio profile-sm-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor gravida metus et placerat. Nam quis elit ex. Mauris id purus eros. Donec dignissim nibh ac odio lobortis imperdiet. Nulla egestas arcu ac mattis ultricies. Nunc quis pretium massa, non gravida lacus. </p>
-                   
-                      </div> 
-
-        </div><!-- top dash-->
-
-          <div class=" main-content">
-            <div class="row center">
-               <h1 class="dashboard-header center"> Update your profile now</h1>
-            </div>
-
-         <div class="row panels">
-                   <div class="span3 panel first">
-                    
-                       <i class="fa fa-5x fa-user "></i>
-                          <h2 class="panel-header"> Edit Pic/Bio</h2>
-                   </div> 
-             
                
-                   <div class="span3 panel keywords">
-                     <i class="fa fa-5x fa-tag "></i>
-                          <h2 class="panel-header"> Update Keywords</h2>
-                   </div> 
-             
+ <!-- structure 2 col row-->
+ <div class="row main-content">
 
+
+ <div class="span12">
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#inbox" aria-controls="home" role="tab" data-toggle="tab">Inbox</a></li>
+    <li role="presentation"><a href="#sent" aria-controls="profile" role="tab" data-toggle="tab">Sent</a></li>
+ 
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="inbox">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+         <th>From</th>
+          <th>Subject</th>
+          <th>When</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+       <tr>
+          <td><img src="img/img-profile.jpg" class="profile-pic-sm" alt="" /> Marie</td>
+          <td><a href="messages-detail.html"> Following our discussion... </a></td>
+          <td>5 minutes ago</td>
          
-                    <div class="span3 panel cv">
-                     <i class="fa fa-5x fa-file-text "></i>
-                          <h2 class="panel-header"> Manage CV's </h2>
-                   </div> 
-           
-                    <div class="span3 panel netorks">
-                     <i class="fa fa-5x  fa-users "></i>
-                          <h2 class="panel-header">Your Networks </h2>
-                   </div> 
-          </div>  
+        </tr>
+
+        <tr>
+
+             <td><img src="img/img-profile_2.jpg" class="profile-pic-sm" alt="" />Richard</td>
+           <td><a href="messages-detail.html"> Meeting next Thursday</a></td>
+          <td>2 days ago</td>
+        </tr>
+        <tr>
+           <td><img src="img/img-profile_3.jpg" class="profile-pic-sm" alt="" />Rachel</td>
+          <td><a href="messages-detail.html"> elay in processing application</a></td>
+          <td>5 minutes ago</td>
+        </tr>
+
+        <tr>
+            <td><img src="img/img-profile_4.jpg" class="profile-pic-sm" alt="" /> Annette</td> 
+          <td><a href="messages-detail.html"> Following our discussion...</a></td>
+          <td>5 minutes ago</td>
+        </tr>
+        <tr>
+             <td><img src="img/img-profile_5.jpg" class="profile-pic-sm" alt="" />Brianna</td>
+           <td><a href="messages-detail.html"> Meeting next Thursday</a></td>
+          <td>2 days ago</td>
+        </tr>
+        <tr>
+             <td><img src="img/img-profile_6.jpg" class="profile-pic-sm" alt="" />Brian</td>
+          <td><a href="messages-detail.html"> Delay in processing application</a></td>
+          <td>5 minutes ago</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+    <div role="tabpanel" class="tab-pane" id="sent">
+
+ <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>To</th>
+          <th>Subject</th>
+        
+          <th>When</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+       
+       
+           <td><img src="img/img-profile.jpg"class="profile-pic-sm" alt="" /> Otto</td>
+          <td><a href="messages-detail.html"> Following our discussion...</a></td>
+             <td>5 minutes ago</td>
+        </tr>
+        <tr>
+       
+          <td><img src="img/img-profile_3.jpg" class="profile-pic-sm" alt="" /> Rachel</td>
+           <td><a href="messages-detail.html"> Meeting next Thursday </a></td>
+
+          <td>2 days ago</td>
+        </tr>
+        <tr>
+         
+         
+       <td><img src="img/img-profile_2.jpg" class="profile-pic-sm" alt="" /> Richard</td>
+      
+            <td><a href="messages-detail.html"> Following our discussion...</a></td>
+            <td>5 minutes ago</td>
+
+        </tr>
+      </tbody>
+
+    </div>
+   
+  </div>
+
+</div>
 
 
- </div>  
 
-       </main><!--main  container-->
+
+     
+         
+  </div> <!-- close col-->
+
+ 
+</main><!--main  container-->
 
 
    
