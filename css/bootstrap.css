@@ -5645,6 +5645,11 @@ a.badge:focus {
     border-bottom: 1px solid #ededed;
 }
 
+main ul{
+  list-style: none;
+}
+ 
+
 .dash-links li{
   display: inline;
   padding: 6px 8px ;
@@ -5958,7 +5963,7 @@ font-size: 32px
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color:#dbdbdb;
-  margin-top:1%;
+  margin:1% ;
 
 }
 .apply-header{
@@ -6041,12 +6046,19 @@ padding: 5% 8% 5% 8%;
 
 #messaged{
   background-color: #57ea50;
+  color: #000;
   
 
 
 }
 
-.form-signin{  max-width: 500px;
+.form-question{
+  border-bottom: 1px solid #ccc;
+  padding:2% 0% 2% 0%;
+}
+
+
+.form-signin{  max-width: 520px;
   padding: 15px;
   margin: 0 auto;
    background-color: #fff;
@@ -6059,3 +6071,90 @@ padding: 5% 8% 5% 8%;
 .form-signin a{
   color:#fff;
 }
+
+form ul{
+  list-style: none;
+  margin: 0%;
+  padding:0%;
+}
+
+form li{
+  display: inline;
+  float: left;
+  padding-right: 2%;
+}
+
+form input {
+  padding-top: 2%;
+}
+
+.sign-in-but{
+  margin-top: 5%;
+}
+
+
+
+
+
+.keyword-tags{
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  background-color: #ededed;
+     -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color:#dbdbdb;
+  margin:1% ;
+
+}
+
+
+form .tall{
+  height: 100px;
+}
+
+.sign-in-success{
+  background-color: #57ea50;
+  margin-bottom:2%;
+
+
+}
+
+.profile-span{
+  border: 1px solid #ccc;
+  padding: 3%;
+    -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+          margin-top: 2%;
+}
+
+.profile-span ul{
+  list-style: none;
+}
+.profile-span ul li{
+  display: inline-block;
+}
+
+.form-field{
+  border: 1px solid #ccc;
+background-color:#ededed;
+padding: 2%;
+margin-bottom: 5%;
+
+}
+
+
+.form-group{
+  padding: 1% 0% 1% 2%;
+
+
+}
+
+.form-section{
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 2%;
+      padding-top: 2%;
+
+}
+

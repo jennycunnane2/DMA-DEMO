@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+                            
+
+  </head>
+
+  <body >
+
+           <!-- Nav Bar-->
+                        <div class="navbar navbar-inverse navbar-fixed-top">
+                          <div class="navbar-inner">
+                            <div class="container">
+
+                                      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                               <a class="brand" href="#">Direct Match</a>
+                              <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                   <li class="active"><a href="#">Home</a></li>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Careers</a></li>
+                                  <li><a href="#">Internships</a></li>
+                                   <li><a href="#">Contact</a></li>
+                             
+                                </ul>
+
+
+                              </div><!--/.nav-collapse -->
+                            </div><!--/.container -->
+                          </div><!--/.navbarinner -->
+                        </div><!--/.navbarinner fixedr -->
+          <!-- End Nav Bar-->
+
+
+
+ <!-- Open body content-->
+  <main class="container "> 
+              
+                  <div class="row dashlinks">
+                                        <nav class="dashboard-nav">
+                                           <ul class="dash-links">
+                                              <li><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
+                                              <li><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
+                                              <li><a href="messages.html"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
+                                              <li><a href="preferences.html"> <i class="fa fa-cog" > Preferences </i> </a></li>
+                                              <li><a href="home-sign-out.html">Sign Out<i class="fa fa-sign-out"></i> </a></li>
+                                         </ul>
+                                        </nav>
+                 </div>   
+
+
+         
+ <div class="row main-content">
+    <ul class="breadcrumb">
+                 <li><a href="profile.html"><i class="fa fa-hand-o-left"></i> Back </a></li>
+       </ul>
+      <div class="span12 profile-span">
+
+                               <div role="tabpanel">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Profile pic & bio</a></li>
+                                  <li role="presentation"  class="active" ><a href="#keywords" aria-controls="keywords" role="tab" data-toggle="tab">Keywords</a></li>
+                                  <li role="presentation"><a href="#cv" aria-controls="cv" role="tab" data-toggle="tab">Manage Cv</a></li>
+                                  <li role="presentation"><a href="#networks" aria-controls="networks" role="tab" data-toggle="tab">Your networks</a></li>
+                                </ul>
+                                </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+
+                           <!-- Open Home -->
+                                  <div role="tabpanel" class="tab-pane" id="home">
+
+                                         <div class="span4">
+                                              <ul>
+                                                <li class="profile-pic sender"> <img src="img/img-profile_3.jpg" class="profile-pic" alt="" />
+                                                </li>
+                                                <li>
+                                                <input type="button" id="profile-pic" value="Change profile picture" aria-label="..." onclick="window.location='https://www.linkedin.com';">
+                                                </li>
+                                            </ul>
+                                         </div> 
+
+
+                                          <div class="span6">   <!-- Open span 6-->
+                                                      <div class="form-field">  <!-- text field-->
+
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat mauris, cursus et luctus at, ornare sagittis lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed diam nisi, molestie vel nibh vulputate, porta auctor risus. Curabitur at nulla at nisi volutpat aliquet feugiat quis magna. 
+                                                      </div><!-- Close text field -->
+
+
+                                                       <div class="right">
+                                                       <button type="button" data-toggle="modal" data-target="#myModal" class="save-job-btn"> <i class="fa fa-plus"></i>Update my profile</button>
+                                                       </div>
+
+                                                         <!-- Modal -->
+                                                              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                      <h4 class="modal-title" id="myModalLabel">Profile updated!</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+
+                                                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div> <!-- Close Modal -->
+                                                            </div>  <!-- span 6 -->
+                                         
+                                               </div>     <!-- close home-->
+
+
+                           <!-- Home End -->     
+
+                           <!-- Keyword -->
+
+                                                  <div role="tabpanel" class="tab-pane active" id="keywords">
+
+                                                     <div class="span10">
+                                                        <div class="keywords">
+                                                             <h1 class="title-large"> Keywords</h1> 
+
+                                                                 <ul class="keywords-list">
+                                                                    <li> Internship</li>
+                                                                    <li>Entry Level</li>
+                                                                    <li>Junior Designer</li>
+                                                                    <li> Digital Designer</li>
+                                                                    <li>  Design Graduate</li>
+                                                                    <li> Junior web Designer</li>
+                                                                    <li> Junior Developer</li>
+                                                                    <li> Junior Front End Designer</li>
+                                                                  </ul>   
+                                                           </div>
+                                                              <div class="right">
+                                                          <button type="button" data-toggle="modal" data-target="#myModal2" class="save-job-btn"> <i class="fa fa-plus"></i>Update keywords</button>
+                                                         </div>
+                                                          <!-- Modal -->
+                                                              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                      <h4 class="modal-title" id="myModalLabel2">Profile updated!</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+
+                                                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div> <!-- Close Modal -->
+                                                 
+                                                  </div>    <!-- close span  --> 
+
+                                                 </div> 
+
+                          <!-- Close Keyword -->
+
+
+                                                  <div role="tabpanel" class="tab-pane" id="cv">
+
+
+
+
+  <!-- messages -->
+                                                                <div class="form-question">
+                                                                    <h2 class="form-signin-heading">Manage your CV</h2>
+                                                                    <!-- fields -->
+
+                                                                    <div class="form clearfix">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p>cvname.pdf</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <label>
+                                                                                    <input type="button"  value="Update this CV" aria-label="...">
+                                                                                </label>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                  </div>
+                                                                <!--close form-question-->
+
+
+                                                                <!-- mc question-->
+                                                                <div class="form-question">
+                                                                    <h2 class="form-signin-heading">(Optional) Upload a video CV<sup></sup> </h2>
+                                                                    <!-- fields -->
+
+                                                                    <div class="form">
+                                                                        <label>
+                                                                            <input type="button" value="Upload video" aria-label="..."> 
+                                                                        </label>
+                                                                    </div>  
+                                                                </div>
+                                                           
+                                                             <!-- Close messages -->
+
+
+                                                  </div>
+
+                                                     <!-- Open networks -->
+                                                    <div role="tabpanel" class="tab-pane" id="networks">
+
+
+                                                            <div class="span8">       
+                                                                      <h2 class="form-signin-heading">Manage your networks</h2>
+                                                              <label class="control-label">Linkedin URL</label>
+                                                              <input type="text" id="personal" class="span5" placeholder="E.G linkedin.com/in/zimandzou" >
+                                                              <label class="control-label">Personal website</label>
+                                                              <input type="text" id="dribbble" class="form-control span5" placeholder="E.G www.yourdomain.com" >
+                                                              <label class="control-label">Dribbble username</label>
+                                                              <input type="text" id="behance" class="span5" placeholder="E.G https://dribbble.com/zimandzou" >
+                                                              <label class="control-label">Behanse username</label>
+                                                              <input type="text" id="live" class="form-control span5" placeholder="E.G https://www.behance.net/zimandzou">
+                                                           </div>
+
+                                                             <div class="right">
+                                                             <button type="button" data-toggle="modal" data-target="#myModal3" class="save-job-btn"> <i class="fa fa-plus"></i>Update</button>
+                                                             </div>
+                                                              <!-- Modal -->
+                                                              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                      <h4 class="modal-title" id="myModalLabel3">Profile updated!</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+
+                                                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div> <!-- Close Modal -->
+
+                                                    </div>
+                                </div>  <!-- Close tab panel -->     
+
+
+                              </div> <!-- Close span 12 -->
+                              </div> <!-- close row -->
+    
+
+       </main><!--main  container-->
+
+
+   
+<footer class="footer">
+      <div class="container">
+          <div class="row">
+                <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/>  Partner 1</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"  alt="partner logo"/>  Partner 2</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"  alt="partner logo"/>  Partner 3</div>
+          </div>
+      </div>
+</footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/jquery.js"></script>
+    <script src="./index_files/bootstrap-transition.js"></script>
+    <script src="./index_files/bootstrap-alert.js"></script>
+    <script src="./index_files/bootstrap-modal.js"></script>
+    <script src="./index_files/bootstrap-dropdown.js"></script>
+    <script src="./index_files/bootstrap-scrollspy.js"></script>
+    <script src="./index_files/bootstrap-tab.js"></script>
+    <script src="./index_files/bootstrap-tooltip.js"></script>
+    <script src="./index_files/bootstrap-popover.js"></script>
+    <script src="./index_files/bootstrap-button.js"></script>
+    <script src="./index_files/bootstrap-collapse.js"></script>
+    <script src="./index_files/bootstrap-carousel.js"></script>
+    <script src="./index_files/bootstrap-typeahead.js"></script>
+
+  
+
+<div id="feedly-mini" title="feedly Mini tookit"></div>
+ 
+    <script src='masonry.pkgd.min.js'></script>
+</body>
+</html>
+

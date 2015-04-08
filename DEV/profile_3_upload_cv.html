@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
-<html lang="en">
+<html lang="en" hola_ext_inject="ready">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body>
+  <body data-pinterest-extension-installed="cr1.35" data-feedly-mini="yes" cz-shortcut-listen="true" hola-ext-player="1">
 
            <!-- Nav Bar-->
                         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -75,78 +75,89 @@
   <main class="container "> 
               
   <div class="row dashlinks">
-                       <nav class="dashboard-nav">
-                           <ul class="dash-links">
-                              <li class="active"><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
-                              <li><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
-                              <li><a href="messages.html"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
-                              <li><a href="preferences.html"> <i class="fa fa-cog" > Preferences </i> </a></li>
-                              <li><a href="home-sign-out.html">Sign Out<i class="fa fa-sign-out"></i> </a></li>
+                        <nav class="dashboard-nav">
+                        <ul class="dash-links">
+                              <li><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
+                           <li><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
+                            <li><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
+                              <li><a href="#"> <i class="fa fa-cog" > Settings </i> </a></li>
+                              <li><a href="#">Sign Out<i class="fa fa-sign-out"></i> </a></li>
                          </ul>
                         </nav>
-                </div>   
+ </div>   
 
 
-          <div class="row top-dash">
+         
+ <div class="row main-content">
+    <div class="span12 profile-span">
 
-                     <div class="span6 welcome">
-                     <ul class="dash-links">
-                          <li class="profile-pic"> <img src="img/img-profile.jpg" class="profile-pic" alt="" /></li>
-                        <li> <h1 class="dashboard-header"> Welcome back Joanne! </h1></li>
-                       
-                       
-                      </ul>
-                      
-                    
-                   
-                      </div>  
-                      <div class="span6 bio profile-sm-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor gravida metus et placerat. Nam quis elit ex. Mauris id purus eros. Donec dignissim nibh ac odio lobortis imperdiet. Nulla egestas arcu ac mattis ultricies. Nunc quis pretium massa, non gravida lacus. </p>
-                   
-                      </div> 
+                               <div role="tabpanel">
 
-        </div><!-- top dash-->
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Profile pic & bio</a></li>
+                                  <li role="presentation" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Keywords</a></li>
+                                  <li role="presentation"  class="active" ><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Manage Cv</a></li>
+                                  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Your networks</a></li>
+                                </ul>
 
-          <div class=" main-content">
-            <div class="row center">
-               <h1 class="dashboard-header center"> Update your profile now</h1>
-            </div>
-
-         <div class="row panels">
-
-           <a href="profile_bio.html">
-                   <div class="span3 panel first">
-                    
-                       <i class="fa fa-5x fa-user "></i>
-                          <h2 class="panel-header"> Edit Pic/Bio</h2>
-                   </div> 
-             </a>
-                <a href="profile_keywords.html" >
-                   <div class="span3 panel keywords">
-                     <i class="fa fa-5x fa-tag "></i>
-                          <h2 class="panel-header"> Update Keywords</h2>
-                   </div> 
-               </a>
-
-          <a href="profile_cv.html" >
-                    <div class="span3 panel cv">
-                     <i class="fa fa-5x fa-file-text "></i>
-                          <h2 class="panel-header"> Manage CV's </h2>
-                   </div> 
-            </a>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane" id="home"></div>           
+                                  <div role="tabpanel" class="tab-pane" id="profile"> </div>
+                                  <div role="tabpanel" class="tab-pane active" id="messages">
 
 
-            <a href="profile_networks.html">
-                    <div class="span3 panel netorks">
-                     <i class="fa fa-5x  fa-users "></i>
-                          <h2 class="panel-header">Your Networks </h2>
-                   </div> 
-                     </a>
-          </div>  
+                                             <!-- mc question-->
+                    <div class="form-question">
+                        <h2 class="form-signin-heading">Manage your CV</h2>
+                        <!-- fields -->
+
+                        <div class="form clearfix">
+                            <ul>
+                                <li>
+                                    <p>cvname.pdf</p>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="button" id="" value="Update this CV" aria-label="...">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
 
 
- </div>  
+                    </div>
+                    <!--close form-question-->
 
+
+                    <!-- mc question-->
+                    <div class="form-question">
+                        <h2 class="form-signin-heading">(Optional) Upload a video CV<sup></sup> </h2>
+                        <!-- fields -->
+
+                        <div class="form">
+                            <label>
+                                <input type="button" id="" value="Upload video" aria-label="..."> 
+                            </label>
+                        </div>
+                        <!--close fileds-->
+
+
+                    </div>
+                    <!--close form-question-->
+
+
+
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                                </div>
+
+                              </div>
+
+                              </div> 
+      </div>
        </main><!--main  container-->
 
 
@@ -154,9 +165,9 @@
 <footer class="footer">
       <div class="container">
           <div class="row">
-                <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/>  Partner 1</div>
-              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"  alt="partner logo"/>  Partner 2</div>
-              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"  alt="partner logo"/>  Partner 3</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 1</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 2</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 3</div>
           </div>
       </div>
 </footer>

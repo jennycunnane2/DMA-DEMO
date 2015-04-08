@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
-<html lang="en" hola_ext_inject="ready">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -41,10 +41,11 @@
 
   </head>
 
-  <body data-pinterest-extension-installed="cr1.35" data-feedly-mini="yes" cz-shortcut-listen="true" hola-ext-player="1">
+  <body>
 
            <!-- Nav Bar-->
                         <div class="navbar navbar-inverse navbar-fixed-top">
+
                           <div class="navbar-inner">
                             <div class="container">
 
@@ -75,14 +76,16 @@
 
  <!-- Open body content-->
 
-   <section class="container "> 
+
+   <div class="container "> 
                <div class="row dashlinks">
-                        <nav class="dashboard-nav">
-                          <ul class="dash-links">
+                         <nav class="dashboard-nav">
+                           <ul class="dash-links">
                               <li><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a></li>
-                           <li class="active"><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
-                            <li><a href="#"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
-                              <li><a href="#">Sign Out<i class="fa fa-sign-out"></i> </a></li>
+                              <li class="active"><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a></li>
+                              <li><a href="messages.html"> <i class="fa fa-envelope" >Messages (3)</i> </a></li>
+                              <li><a href="preferences.html"> <i class="fa fa-cog" > Preferences </i> </a></li>
+                              <li><a href="home-sign-out.html">Sign Out<i class="fa fa-sign-out"></i> </a></li>
                          </ul>
                         </nav>
                 </div>   
@@ -105,8 +108,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor gravida metus et placerat. Nam quis elit ex. Mauris id purus eros. Donec dignissim nibh ac odio lobortis imperdiet. Nulla egestas arcu ac mattis ultricies. Nunc quis pretium massa, non gravida lacus. </p>
                    
                       </div> 
-    </section>
-        </div><!-- top dash-->
+                        </div> 
+    </div>
+     
   <main class="container-full dashboard clearfix"> <!-- opens 100% container-->
 
  <div class="row matches-grid">
@@ -116,24 +120,24 @@
    <a href="match_detail.html">   
     <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png" alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
-                       <div class="match-highlight new"> New match!</div>
-                   </section>
+                       <div class="match-highlight new" id="messaged"> Message sent!</div>  
+                    </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+          </div>
             </div>
     </div>
 
@@ -145,24 +149,24 @@
  <a href="match_detail.html">  
     <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png " alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
-                       <div class="match-highlight new"> New match!</div>
-                   </section>
+                        <div class="match-highlight new"> New match!</div>
+                     </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+          </div>
             </div>
     </div>
  </a>
@@ -172,26 +176,26 @@
 
    <!-- opens matches panel-->
    <a href="match_detail.html"> 
-    <div class="row-fluid span4 item " id="messaged">
+    <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png" alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
-                       <div class="match-highlight new"> Messaged sent!</div>
-                   </section>
+                       <div class="match-highlight new"> New match!</div>
+                       </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+              <div><img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+          </div>
             </div>
     </div>
   </a>
@@ -205,24 +209,24 @@
   <a href="match_detail.html">              
      <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
-                       <div class="profile-tiny-text">Are recruiting</div>
-                       <div> Junior Web Designer</div>
-                       <div class="match-highlight new"> Match!</div>
-                   </section>
+                            <div class="job-header">
+                              <div class="match-logo"> <img src="img/img-logo-placeholder.png" alt="placeholder"></div>
+                               <div class="profile-tiny-text">Are recruiting</div>
+                               <div> Junior Web Designer</div>
+                               <div class="match-highlight new"> Match!</div>
+                             </div>
 
-                 <article class="match-detail">
-                      <ul class="joblisting">
-                            <li>Agency name</li>
-                            <li>Agency Location</li>
-                            <li>Date posted</li>
-                            <li> Closing date</li>
-                      </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne</a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+                             <div class="article-details">
+                                    <ul class="joblisting">
+                                          <li>Agency name</li>
+                                          <li>Agency Location</li>
+                                          <li>Date posted</li>
+                                          <li> Closing date</li>
+                                    </ul>
+                            </div>
+                        <div class="author-details">
+                          <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+                       </div>
             </div>
     </div>
 </a> 
@@ -234,27 +238,27 @@
  <a href="match_detail.html">  
    <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png" alt="placeholder" ></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
                         <div class="match-highlight old"> Match!</div>
-                   </section>
+                     </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+               <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+                       </div>
             </div>
     </div>
- </a>   
+</a> 
 
    <!-- closesmatches panel-->
               
@@ -263,28 +267,27 @@
   <a href="match_detail.html">  
      <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"  alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
                        <div class="match-highlight old"> Match!</div>
-                   </section>
+                   </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+                       </div>
             </div>
     </div>
-
- </a>   
+</a> 
    <!-- closesmatches panel-->
               
 
@@ -292,27 +295,27 @@
  <a href="match_detail.html">  
   <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"  alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
                         <div class="match-highlight old"> Match!</div>
-                   </section>
+                      </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+               <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+                       </div>
             </div>
     </div>
-</a>
+</a> 
    <!-- closesmatches panel-->
               
 
@@ -321,32 +324,31 @@
 
    <div class="row-fluid span4 item">
             <div class="match profile-sm-text">
-                  <section class="job-header"> 
-                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"></div>
+                <div class="job-header">
+                      <div class="match-logo"> <img src="img/img-logo-placeholder.png"  alt="placeholder"></div>
                        <div class="profile-tiny-text">Are recruiting</div>
                        <div> Junior Web Designer</div>
                         <div class="match-highlight old"> Match!</div>
-                   </section>
+                   </div>
 
-                 <article class="match-detail">
+               <div class="article-details">
                       <ul class="joblisting">
                             <li>Agency name</li>
                             <li>Agency Location</li>
                             <li>Date posted</li>
                             <li> Closing date</li>
                       </ul>
-                  </article>
-              <footer class="author-details">  
-              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="" />Posted by  <a> Jane Dunne </a> <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
-              </footer>
+              </div>
+            <div class="author-details">
+              <div> <img src="img/img-profile.jpg" class="profile-pic-sm" alt="profile" >Posted by Jane Dunne <span class="send-message"><i class="fa fa-envelope"></i> </span></div>
+                       </div>
             </div>
     </div>
-
-  </a>
+</a> 
 
    <!-- closesmatches panel-->
-
 </div>
+
 
 
      </main><!-- closes 100% container-->
@@ -355,9 +357,9 @@
 <footer class="footer">
       <div class="container">
           <div class="row">
-              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 1</div>
-              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 2</div>
-              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo"/>  Partner 3</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/>  Partner 1</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/>  Partner 2</div>
+              <div class="span4 footer-logos" > <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/>  Partner 3</div>
           </div>
       </div>
 </footer>

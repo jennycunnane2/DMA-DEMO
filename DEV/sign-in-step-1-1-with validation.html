@@ -86,61 +86,44 @@
         <!-- Open body content-->
 
 
-        <div class="container">
+        <div class="container clearfix">
 
-                <form class="form-signin" data-toggle="validator">
+                                <form data-toggle="validator" role="form" class="form-signin">
+                                     <h2 class="form-signin-heading">Sign up to find opportunitites</h2>
 
-                      
+                                          <div class="form-group">
+                                            <label for="inputName" class="control-label">Name</label>
+                                            <input type="text" class="form-control span5" id="inputName" placeholder="Cina Saffary" required>
+                                          </div>
+                                        
+                                          <div class="form-group">
+                                            <label for="inputEmail" class="control-label">Email</label>
+                                            <input type="email" class="form-control span5" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                                            <div class="help-block with-errors"></div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputPassword" class="control-label">Password</label>
+                                            <div class="form-group col-sm-6">
+                                              <input type="password" data-minlength="6" class="form-control span5" id="inputPassword" placeholder="Password" required>
+                                              <span class="help-block">Minimum of 6 characters</span>
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                              <input type="password" class="form-control span5" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                                              <div class="help-block with-errors"></div>
+                                            </div>
 
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> Job seekers - Step 1 </a>
-                                        </li>
-                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> Job posters - Sign up</a>
-                                        </li>
+                                            <div class="form-group">
+                                            <label for="inputName" class="control-label">Location</label>
+                                            <input type="text" class="form-control span5" id="inputName" placeholder="Town/City" required>
+                                          </div> 
+                                            </div>
+                                        
 
-                                </ul>
-                       
-                                
-
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-
-                                <!-- Tabpanel 1-->
-                                        <div role="tabpanel" class="tab-pane active" id="home">
-
-
-                                                <h2 class="form-signin-heading">Sign up to find opportunitites</h2>
-                                                <div class="form-group"> 
-                                                <label class="control-label"> Name</label>
-                                                <input type="text" id="inputText" class="form-control span5" placeholder="E.G Joe Smith" required>
-                                                 </div>
-                                                 <div class="form-group"> 
-                                                 <label class="control-label"> Email</label>
-                                                <input type="email" class="form-control span5" id="inputEmail" placeholder="E.G someone@mail.com" data-error="Bruh, that email address is invalid" required>
-                                                </div>
-                                                <!-- <input type="email" id="inputEmail" class="form-control span5" placeholder="Email address" required>-->
-                                               <div class="form-group"> 
-                                                 <label class="control-label"> Password</label>
-                                                <input type="password" id="inputPassword" class="form-control span5" placeholder="Minimum of 6 characters" required >
-                                                 </div>
-                                                 <div class="form-group"> 
-                                                 <label class="control-label"> Re-enter password</label>
-                                                <input type="password" id="inputPasswordConfirm" class="form-control span5" placeholder="Passwords must match" required >
-                                                 </div>
-
-                                                  <div class="form-group"> 
-                                                     <label class="control-label"> Your location</label>
-                                                     <input type="search" id="inputSearch" class="form-control span5" placeholder="Your location" required >
-                                                 </div>
-
-                                                            <!--alert info-->
-                                                            
-                                            <div class="form-group form-section"> 
+                                          <div class="form-group"> 
                                              <label class="control-label">Your chosen career path</label>
-                                       
+                                            <label>
                                             <div class="radio">
-                                              <label> 
+                                              <label> </label>
                                                 <input type="radio" name="underwear" required>
                                                Design
                                               </label>
@@ -172,32 +155,14 @@
 
                                           </div>
 
-                                                             
-                                                  <!--checkbox-->                   
-                                                <div class="checkbox form-section">
-                                                        <label>
-                                                                <input type="checkbox" value="remember-me "> Remember me
-                                                        </label>
-                                                </div>   <!--close checkbox-->  
-
-                                                 <!--button-->  
-                                                    
-                                                    <!--  <input type="button" value=" Create my profile" class="btn btn-lg btn-primary btn-block" onclick="window.location='sign-in-step-2.html';"> -->  
-                                                 <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="window.location='sign-in-step-2.html';" > Complete my profile</button>
-                                                 <!--form button--> 
-
-                                           
-
-          
-
-                </div> <!-- Close Tabpanel 1-->
-               <!-- open tabapanel2 content--> <div role="tabpanel" class="tab-pane" id="profile">...</div><!-- close tabpanel 2-->
-
-                </div>  <!-- Close tab-content-->
-
-            
-            </form>
-        <!-- Close form signin-->
+                                          <div class="form-group">
+                                            
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="submit" class="btn btn-primary" > Submit</button>
+                                          </div>
+                                     
+                                </form>
 
         </div>
         <!-- /container -->
@@ -217,6 +182,7 @@
 
 
 
+</body>
 </body>
 
 </html>
