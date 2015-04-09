@@ -5951,7 +5951,7 @@ font-size: 32px
 .keywords-list{
   list-style: none;
   margin:0px;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 
 }
 
@@ -6085,7 +6085,8 @@ form li{
 }
 
 form input {
-  padding-top: 2%;
+
+  margin-bottom: 2%;
 }
 
 .sign-in-but{
@@ -6154,7 +6155,110 @@ margin-bottom: 5%;
 .form-section{
    border-bottom: 1px solid #ccc;
    padding-bottom: 2%;
-      padding-top: 2%;
+padding-top: 2%;
 
 }
 
+
+.cv-name{
+  display: block;
+  background-color: #eee;
+  border: 2px dashed #ccc;
+font-size: 18px;
+padding:10px 30px;
+
+}
+
+
+.uploader{
+    background-color: #eee;
+  border: 2px dashed #ccc;
+}
+
+.right{
+
+  padding-top: 2%;
+}
+
+input .selected{
+  background-color:  #000eee;
+}
+
+.account-settings{
+  margin: 0 auto;
+
+}
+
+.top-section-wrapper{
+
+  background-image: url("../img/carousel_1.png");
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 800px;
+
+
+
+}
+
+.home-wrapper{
+  padding-top: 3%;
+}
+
+.home-container-bottom{
+  width: 100%;
+  background-color: #f1f2f4;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #000;
+
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #000;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Bootstrap, from Twitter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <style>
+                body {
+                        padding-top: 60px;
+                        /* 60px to make the container go all the way to the bottom of the topbar */
+                }
+        </style>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+
+
+</head>
+
+<body class="sign-in">
+        <!-- Nav Bar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                        <div class="container">
+
+                                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="brand" href="#">Direct Match</a>
+                                <div class="nav-collapse collapse">
+                                        <ul class="nav">
+                                                <li class="active"><a href="#">Home</a>
+                                                </li>
+                                                <li><a href="#">About us</a>
+                                                </li>
+                                                <li><a href="#">Careers</a>
+                                                </li>
+                                                <li><a href="#">Internships</a>
+                                                </li>
+                                                <li><a href="#">Contact</a>
+                                                </li>
+
+                                        </ul>
+
+
+                                </div>
+                                <!--/.nav-collapse -->
+                        </div>
+                        <!--/.container -->
+                </div>
+                <!--/.navbarinner -->
+        </div>
+        <!--/.navbarinner fixedr -->
+        <!-- End Nav Bar-->
+
+
+
+
+        <!-- Open body content-->
+
+
+        <div class="container">
+
+
+                <div class="row dashlinks">
+                        <nav class="dashboard-nav">
+                                <ul class="dash-links">
+                                        <li><a href="profile.html"><i class="fa fa-cog"></i> Profile settings</a>
+                                        </li>
+                                        <li><a href="dashboard.html"><i class="fa fa-bell"></i>Dashboard (4)</a>
+                                        </li>
+                                        <li>
+                                                <a href="messages.html"> <i class="fa fa-envelope">Messages (3)</i> </a>
+                                        </li>
+                                        <li>
+                                                <a href="preferences.html"> <i class="fa fa-cog"> Preferences </i> </a>
+                                        </li>
+                                        <li><a href="home-sign-out.html">Sign Out<i class="fa fa-sign-out"></i> </a>
+                                        </li>
+                                </ul>
+                        </nav>
+                </div>
+
+
+                <form class="form-signin">
+
+                      
+
+                               
+                                                             <h2 class="form-signin-heading">Account settings</h2>
+                                                                          <label class="control-label">Name</label>
+                                                                          <input type="text" id="name" class="span5" placeholder="Your name">
+                                                                          <label class="control-label">Email address</label>
+                                                                          <input type="text" id="email" class="form-control span5" placeholder="youa@yourdomain.com">
+
+                                                                          <div class="form-section">
+                                                                          <label class="control-label">Password</label>
+                                                                          <button type="button" data-toggle="modal" data-target="#password_modal" class="save-job-btn">Change your password</button>
+                                                                        </div>
+
+                                                     <div class="modal fade" id="password_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                                <div class="modal-header">
+                                                                                  <h3>Change Password <span class="extra-title muted"></span></h3>
+                                                                              </div>
+                                                                              <div class="modal-body form-horizontal">
+                                                                                  <div class="control-group">
+                                                                                      <label class="control-label">Current Password</label>
+                                                                                      <div class="controls">
+                                                                                          <input type="password" name="current_password">
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="control-group">
+                                                                                      <label class="control-label">New Password</label>
+                                                                                      <div class="controls">
+                                                                                          <input type="password" name="new_password">
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="control-group">
+                                                                                      <label class="control-label">Confirm Password</label>
+                                                                                      <div class="controls">
+                                                                                          <input type="password" name="confirm_password">
+                                                                                      </div>
+                                                                                  </div>      
+                                                                              </div>
+                                                                              <div class="modal-footer">
+                                                                                  <button  class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                                                                  <button  class="btn btn-primary" id="password_modal_save">Save changes</button>
+                                                                              </div>
+                                                        </div>
+
+                                                                          <label class="control-label">In which locations would you like to  work?</label>
+                                                                          
+                                                                              <div class="">
+
+                                                                                        <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="design" > Midlands
+                                                                                                </label>
+                                                                                        </div>
+                                                                                        <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="data" > Northern England
+                                                                                                </label>
+                                                                                        </div>
+                                                                                        <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="marketing" checked >Greater London
+                                                                                                </label>
+                                                                                        </div>
+                                                                                        <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="technical" > Central London
+                                                                                                </label>
+                                                                                        </div>
+                                                                                        <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="finance" > Southern England
+                                                                                                </label>
+                                                                                        </div>
+                                                                                         <div class="radio">
+                                                                                                <label>
+                                                                                                        <input type="checkbox" name="finance"> Other UK
+                                                                                                </label>
+                                                                                        </div>
+                                                                              </div>
+
+                                                                        <input type="submit" id="send" class="span5" value="Update">
+                                           
+
+          
+
+            
+            </form>
+        <!-- Close form signin-->
+
+        </div>
+        <!-- /container -->
+
+
+
+        <footer class="footer">
+                <div class="container">
+                        <div class="row">
+                                <div class="span4 footer-logos"> <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/> Partner 1</div>
+                                <div class="span4 footer-logos"> <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo" /> Partner 2</div>
+                                <div class="span4 footer-logos"> <img src="img/img-logo-placeholder_horiz.jpg" class="partner-logo" alt="partner logo"/> Partner 3</div>
+                        </div>
+                </div>
+        </footer>
+
+
+
+
+</body>
+
+</html>
